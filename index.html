@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world<section>section</section>
+  <div>div</div>
+  <p>내 마음대로 쓰는 거 같지만 p를 썼기 때문에 단락을 다룸</p>
+  <img src ="https://www.wikihow.com/images/3/38/Insert-Images-with-HTML-Part-2-Step-3.jpg"  alt = "html설명">
+  <a href ="https://zero-base.co.kr/me/learning/classroom" target="_blank">링크</a>
+  <button>버튼</button>
+<!--순서가 없는 리스트unordered list-->
+  <ul><li>1</li><li>2</li><li>1</li></ul>
+ <!--순서가 있는 리스트ordered list-->
+  <ol><li>1</li><li>1</li><li>1</li></ol>
+<!--placeholder ="" 는 inputd에 대한 설명을 달아주는 역할-->
+<label for="input">아이디</label>
+  <input  type="text" placeholder="로그인하고 싶으면 치셈"id="input">
+<!--radio는 기본적으로 멀티선택이 가능한 옵션이다. 정확히는 그룹에 수만큼 할 수 있다. 그룹을 지정하는 name = ""변수가 있어야 한다.-->
+ <br>
+  <input type="radio" id="female" name="gender">
+  <label for="female">woman</label>
+
+  <!--man의 글자를 눌러도 woman앞의 번호가 활성화되는 문제가 있음 br로 단을 나누어 보았지만 무용,오로지 맨 앞의 동그라미를 눌러야만 함 이건 실질적이지 못한 방법으로 보임 아마 name 안에서 하나로 할당해서 그런 거 같음 같은 분류지만 다르다라는 것에 대한 학습이 필요할 것으로 보임,실수였고 rdio로 아이디가 다 맞춰져 있어서 문제가 있는 줄 알았는데 id 다 바꾸고 for도 바꿔 줬는데 안 바뀜, string위치가 조금만 바껴도 값을 다르게 인식해서 그런 거였음. 문제해결 굳-->
+  
+  <input type = "radio" id = "male" name="gender">
+  <label for = "male">man</label></br>
+
+
+<!--type = "checkbox"에서는 name 선언이 불필요함. 그런데 나는 하나 선택하면 자동으로 하나 선택 못 하게 하고 싶은 건데 그건 뭘로 할 수 있을까 있을 거 같은데 그냥 체크박스를 안 쓰면 되긴 하지만 체크박스의 기본적인 자기를 눌렀을 때 비활성화되는 기능이 마음에 들어서 그런 건데-->
+<input type = "checkbox" id="chk" name="fruit">
+  <label for="chk">orange</label>
+<input type = "checkbox" id="chk2" name="fruit">
+  <label for="chk2">apple</label>
+
+ <!--이거 순서에 따라서 위치가 바뀌네 input이면 input먼저 label 먼저면 label 먼저 나오는 방식
+  <input type = "button" id = "show">
+   <label for="show">show</label>-->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
